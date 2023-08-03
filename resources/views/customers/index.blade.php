@@ -1,9 +1,9 @@
 @extends('layouts.admin')
 
-@section('title', 'Customer List')
-@section('content-header', 'Customer List')
+@section('title', 'Lista de clientes')
+@section('content-header', 'Lista de clientes')
 @section('content-actions')
-    <a href="{{route('customers.create')}}" class="btn btn-primary">Add Customer</a>
+    <a href="{{route('customers.create')}}" class="btn btn-primary">Agregar cliente</a>
 @endsection
 @section('css')
     <link rel="stylesheet" href="{{ asset('plugins/sweetalert2/sweetalert2.min.css') }}">
@@ -16,13 +16,13 @@
                 <tr>
                     <th>ID</th>
                     <th>Avatar</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Phone</th>
-                    <th>Address</th>
-                    <th>Created At</th>
-                    <th>Actions</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo electrónico</th>
+                    <th>Teléfono</th>
+                    <th>Direccións</th>
+                    <th>Creado en</th>
+                    <th>Acciones</th>
                 </tr>
                 </thead>
                 <tbody>
